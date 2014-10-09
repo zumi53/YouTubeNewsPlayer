@@ -1,0 +1,93 @@
+body
+{
+    font: 1em Verdana, Geneva, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: Black;
+    background-color: WhiteSmoke;
+}
+div
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+button
+{
+    cursor: pointer;
+}
+.hidden
+{
+    display: none;
+}
+
+#tool li{
+     display: inline-block;
+     list-style-type:none;
+     padding: 0px;
+     margin: 0px 5px;
+}
+
+#playList li{
+     display: inline-block;
+     list-style-type:none;
+}
+/****************************************************************************/
+/* App */
+/****************************************************************************/
+ #app
+{
+	width:100%;
+     min-width: 550px;
+	max-width: 1500px;
+	padding: 0px;
+     margin: 0 auto;
+     background-color: #bbc;
+}
+
+#app>header
+{
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    color: WhiteSmoke;
+    background-color: #006;
+}
+
+#app>#main
+{
+     width: 850px;
+     margin-right: 480px;
+     padding: 0 10px;
+}
+
+#app>#side{
+     float: right;
+     width: 350px;
+     height: 400px;
+     overflow-y: auto;
+}
+
+#app>#lists{
+     margin: 0;
+     padding: 0;
+     
+}
+
+#lists .thumbnail li p{
+	width: 480px;
+	text-overflow: hidden;
+}
+
+#playList thumbnail li{
+     width: 120px;
+}
+
+.playing p{
+     background-color:#faa;
+}
+
+.on  
+{
+     background-color:#afa;
+}

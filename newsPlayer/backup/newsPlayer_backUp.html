@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>newsPlayer</title>
+    <link href="newsPlayer.css" rel="StyleSheet" />
+    <link href="lib/jquery.bxslider.css" rel="stylesheet"/>
+    <script src="lib/jquery-1.8.1.min.js"></script>
+    <script src="lib/jquery.bxslider.min.js"></script>
+    <script src="newsPlayer.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+        
+</head>
+<body>
+    <div id="app">
+        <header>newsPlayer
+          <ul id="tool">
+				<li><button class="today" data-when="0">today</button></li>
+				<li><button class="yestarday"data-when="1">yestarday</button></li>
+				<li><button class="clear">clear</button></li>
+                    <li><button class="pre">pre</button></li>
+                    <li><button class="play">play</button></li>
+                    <li><button class="next">next</button></li>
+          </ul>
+        </header>
+        <div id="main">
+               <div id="player">
+               </div>
+        </div>
+        
+        <hr>
+        
+        <div id="lists">
+			
+		  <h2>CNN News</h2>	
+          <ul class="bxslider">
+          </ul>
+        
+        <hr>
+        
+        <h2>ABC News</h2>
+
+			<ul class="ABC-bxslider">
+			</ul>
+        
+        </div>
+		<div id="template" class="hidden">
+			<ul id="thumbnail-template">
+				<li class="thumbnail" data-video-id=""></li>
+			</ul>
+		</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>newsPlayer</title>
+    <link href="newsPlayer.css" rel="StyleSheet" />
+    <link href="lib/jquery.bxslider.css" rel="stylesheet"/>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="lib/jquery-1.8.1.min.js"></script>
+    <script src="lib/jquery.bxslider.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="newsPlayer.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+        
+</head>
+<body>
+    <div id="app">
+        <div class="navbar">
+          <div class="navbar-inner">
+             <div class="page-header">
+               <h1>Youtube News Player</h1>
+               <ul class="nav nav-pills">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="economic.html">Economic</a></li>
+                    <li><a href="tech.html">Tech</a></li>
+               </ul>
+             </div>
+          </div>
+        </div>
+       <div id="inner">
+          
+          <div id="main">
+               <div id="player">
+               </div>
+               <ul id="tool">
+				<li>
+                         <button class="pre btn btn-default">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                              <span>back</span>
+                         </button>
+                    </li>
+                    <li>
+                         <button class="next btn btn-default">
+                              <span>next</span>
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                         </button>
+                    </li>
+               </ul>
+          </div>
+          
+          <div id="side">
+               <ul id="playList">
+               </ul>
+          </div>
+        
+       </div>
+        
+        
+        
+        <div id="lists">
+          
+          <hr>
+          
+          <div id="CNN" >
+               <h2>CNN News</h2>	
+     
+               <div class="btn-group" data-news="CNN" >
+                    <button type="button" class="t btn btn-default" data-when="0">today</button>
+                    <button type="button" class="y btn btn-default" data-when="1">yestarday</button>
+               </div>
+          
+               <ul class="bxslider">
+               </ul>
+          </div>
+          
+        <hr>
+          <div id="ABC">
+               <h2>ABC News</h2>
+               
+               <div class="btn-group" data-news="ABC">
+                    <button type="button" class="t btn btn-default" data-when="0">today</button>
+                    <button type="button" class="y btn btn-default" data-when="1">yestarday</button>
+               </div>
+               
+			<ul class="bxslider">
+			</ul>
+          </div>
+        </div>
+        
+          <div id="template" class="hidden">
+			<ul id="thumbnail-template">
+				<li class="thumbnail" data-video-id="" data-small=""></li>
+			</ul>
+               <div id="button-template">
+               <button type="button" class="remove btn btn-default">
+                    <span class="glyphicon glyphicon-remove"></span>
+               </button>
+               <button type="button" class="play btn btn-default">
+                    <span class="glyphicon glyphicon-play"></span>
+               </button>
+               </div>
+		</div>
+        </div>
+    </div>
+    
+</body>
+</html>

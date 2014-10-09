@@ -1,0 +1,5 @@
+If you want to add new news channels
+
+1-- change links
+2-- change id and data-news in lists 
+3-  add channel ID in the array.

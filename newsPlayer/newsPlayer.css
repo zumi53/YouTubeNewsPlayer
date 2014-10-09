@@ -1,0 +1,88 @@
+body
+{
+    font: 1em Verdana, Geneva, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: Black;
+    background-color: WhiteSmoke;
+}
+div
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+button
+{
+    cursor: pointer;
+}
+.hidden
+{
+    display: none;
+}
+
+#tool li{
+     display: inline-block;
+     list-style-type:none;
+}
+
+#playList li{
+     list-style-type:none;
+}
+/****************************************************************************/
+/* App */
+/****************************************************************************/
+ #app
+{
+     width:940px;
+     margin:0 auto;
+}
+
+#app>header
+{
+    padding: 0 0.5em;
+    font-size: 1.5em;
+
+}
+
+#app #inner{
+     margin: 0 5px;
+     padding: 50px 0;
+}
+#app #main{
+     width:600px;
+     float:left;
+     
+}
+#app #side{
+     width: 320px;
+     float: right;
+     height: 400px;
+     overflow-y: auto;
+}
+#app>#lists{
+     margin: 0;
+     padding: 0;
+     clear: both;
+     
+}
+
+#lists .thumbnail li p{
+	width: 480px;
+	text-overflow: hidden;
+}
+
+#playList thumbnail li{
+
+}
+
+.playing img{
+     border:4px red solid;
+     
+}
+
+
+#lists .on img{
+     opacity: 0.3;
+}
