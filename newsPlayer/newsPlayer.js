@@ -12,7 +12,7 @@ function onClientLoad() {
 function onYouTubeApiLoad(){
      // This API key is intended for use only in this lesson.
      // See http://goo.gl/PdPA1 to get a key for your own applications.
-     gapi.client.setApiKey('AIzaSyCaPzvdiWXAdXnFhAWDE4imAqSEVAOa_-U');
+     gapi.client.setApiKey('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
 
      var tag = document.createElement('script');
      tag.src = "https://www.youtube.com/iframe_api";
